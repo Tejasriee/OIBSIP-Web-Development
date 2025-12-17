@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Teja Sriee | Temperature Converter</h1>
+        <p>Convert temperatures between Celsius, Fahrenheit, and Kelvin</p>
+    </header>
+
+    <section class="converter-section">
+        <h2>Temperature Conversion</h2>
+
+        <!-- Temperature Input -->
+        <input type="text" id="temperature" placeholder="Enter temperature">
+
+        <!-- Unit Selection -->
+        <label for="fromUnit">From:</label>
+        <select id="fromUnit">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+        </select>
+
+        <label for="toUnit">To:</label>
+        <select id="toUnit">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+        </select>
+
+        <!-- Convert Button -->
+        <button onclick="convertTemperature()">Convert</button>
+
+        <!-- Result Display -->
+        <div id="output"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 Teja Sriee. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
